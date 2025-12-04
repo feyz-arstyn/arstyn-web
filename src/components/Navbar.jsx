@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import Logo from './Logo';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,7 +20,7 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between">
         <a href="#top" className="inline-flex items-center gap-2">
-          <Logo className="h-7 w-7" />
+          <Image src="/Logo-gradient.png" alt="Logo" width={32} height={32} className="h-10 w-10" />
           <span className="text-white font-semibold tracking-tight">Arstyn</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/80">
