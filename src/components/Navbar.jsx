@@ -20,7 +20,7 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-6 py-3 flex items-center justify-between">
         <a href="#top" className="inline-flex items-center gap-2">
-          <Image src="/Logo-gradient.png" alt="Logo" width={32} height={32} className="h-10 w-10" />
+          <img src="/Logo-gradient.png" alt="Logo" width={32} height={32} className="h-10 w-10" />
           <span className="text-white font-semibold tracking-tight">Arstyn</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/80">
