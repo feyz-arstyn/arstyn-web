@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Solutions from '@/components/Solutions';
+import Projects from '@/components/Projects';
 import Footer from '@/components/Footer';
 import AmbientBeams from '@/components/AmbientBeams';
 
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <Solutions />
+        <Projects />
       </main>
       <Footer />
     </div>
