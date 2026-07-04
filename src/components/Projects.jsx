@@ -8,9 +8,23 @@ const projects = [
   {
     title: 'Wasltap',
     description: 'A premium NFC-powered digital business card platform. Sustainable, high-performance technology for instant professional networking.',
-    image: '/works/wasltap.png',
+    image: '/wasltap.png',
     link: 'https://wasltap.com',
     tags: ['Product Design', 'Next.js', 'Digital Branding'],
+  },
+  {
+    title: 'Lockkiyajaye - Turf Booking Application',
+    description: 'Lockkiyajaye is a web and mobile application that provides a platform for booking turfs for various sports.',
+    link: 'https://lockkiyajaye.com',
+    image: '/lockkiyajaye.png',
+    tags: ['Flutter', 'Next.js', 'Tailwind CSS'],
+  },
+  {
+    title: 'Execut - AI Assited Habit Builder',
+    description: 'Execut is an AI-powered habit builder that helps users build healthy habits and achieve their goals.',
+    link: 'https://execut.pro',
+    image: '/execut.png',
+    tags: ['Flutter', 'Next.js', 'Tailwind CSS'],
   }
 ];
 
@@ -45,15 +59,15 @@ export default function Projects() {
                   className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                
+
                 {/* Overlay Sheen */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
-                
+
                 {/* Project Badge */}
                 <div className="absolute top-6 right-6">
-                   <a 
-                    href={project.link} 
-                    target="_blank" 
+                  <a
+                    href={project.link}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-full bg-black/40 backdrop-blur-md border border-white/10 text-white opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 hover:bg-white hover:text-black"
                   >
@@ -65,7 +79,7 @@ export default function Projects() {
               {/* Content */}
               <div className="flex-1 p-8 flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
-                   <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {project.tags.map(tag => (
                       <span key={tag} className="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded bg-white/5 text-white/50 border border-white/[0.05]">
                         {tag}
@@ -73,11 +87,11 @@ export default function Projects() {
                     ))}
                   </div>
                 </div>
-                
+
                 <h3 className="text-2xl font-semibold text-white mb-3 group-hover:text-white transition-colors">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-white/60 leading-relaxed mb-auto">
                   {project.description}
                 </p>
